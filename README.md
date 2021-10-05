@@ -1,1 +1,1 @@
-# Decision-Trees-on-Spark-Pridicting-Hand-Written-Numbers
+# Decision Trees on Spark | Pridicting Hand Written Numbers
