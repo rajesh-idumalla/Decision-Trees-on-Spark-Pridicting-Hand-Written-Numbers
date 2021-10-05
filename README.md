@@ -122,7 +122,7 @@ http://cd7c-35-204-80-15.ngrok.io
 
 ## Data Loading
 
-MNIST
+![Alt text](/digit.png?raw=true "Title")
 
 I will be using the famous MNIST database, a large collection of handwritten digits that is widely used for training and testing in the field of machine learning.The dataset has already been converted to the popular LibSVM format, where each digit is represented as a sparse vector of grayscale pixel values.
 
@@ -302,7 +302,7 @@ annot_max(x,y)
 ax.set_ylim(-0.3,1.5)
 plt.show()
 ```
-
+![Alt text](/acc.png?raw=true "Title")
 
 ```python
 # Stopping Spark Environment
