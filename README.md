@@ -1,7 +1,26 @@
 # Decision Trees on Spark - Pridicting Hand Written Numbers
 
-### Decision Trees on Spark
-Let's setup Spark Colab environment.
+### A little info about Decision Trees
+
+Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
+
+For instance, in the example below, decision trees learn from data to approximate a sine curve with a set of if-then-else decision rules. The deeper the tree, the more complex the decision rules and the fitter the model.
+
+![alt-text](https://github.com/rajeshidumalla/Decision-Trees-on-Spark-Pridicting-Hand-Written-Numbers/blob/main/Screen%20Shot%202021-10-07%20at%202.03.05%20pm.png)
+
+Some advantages of decision trees are:
+
+* Simple to understand and to interpret. Trees can be visualised.
+* Requires little data preparation. Other techniques often require data normalisation, dummy variables need to be created and blank values to be removed. Note however that this module does not support missing values.
+* The cost of using the tree (i.e., predicting data) is logarithmic in the number of data points used to train the tree.
+* Able to handle both numerical and categorical data. However scikit-learn implementation does not support categorical variables for now. Other techniques are usually specialised in analysing datasets that have only one type of variable. See algorithms for more information.
+* Able to handle multi-output problems.
+* Uses a white box model. If a given situation is observable in a model, the explanation for the condition is easily explained by boolean logic. By contrast, in a black box model (e.g., in an artificial neural network), results may be more difficult to interpret.
+* Possible to validate a model using statistical tests. That makes it possible to account for the reliability of the model.
+* Performs well even if its assumptions are somewhat violated by the true model from which the data were generated[(source)](https://scikit-learn.org/stable/modules/tree.html).
+
+
+# Let's setup Spark Colab environment.
 
 ```python
 !pip install pyspark
